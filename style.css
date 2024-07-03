@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url(./images/download.png);
+  font-family: sans-serif;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+.HomePage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details {
+  width: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 40% 0% 40%;
+  color: white;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px -2px rgb(0 0 0 /50%);
+}
+.name_strong {
+  color: rgb(148, 30, 14);
+}
+#name {
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+#position {
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.fas {
+  color: white;
+  font-size: small;
+  transition: transform 0.3s;
+}
+.down {
+  border: 2px solid white;
+  padding: 13px;
+  text-align: center;
+  width: 180px;
+  text-decoration: none;
+  text-shadow: none;
+  color: white;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  transition: background-color 0.3s;
+}
+.down:hover{
+background-color: #0c959a;
+border-color: #0c959a;
+}
+.down:hover .fas{
+transform: rotate(90deg);
+}
+.navbar {
+   position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+  background-color: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  text-align: left;
+  height: 55px;
+  width: 100%;
+  z-index: 99;
+}
+.navHead {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  position: relative;
+  left: 330px;
+}
+.navItems {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 0.3s;
+}
+.navItems:focus,
+.navItems:hover {
+  color: red;
+}
+
