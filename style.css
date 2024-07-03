@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
   /* background-size: cover; */
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 .HomePage {
   height: 100vh;
@@ -55,17 +56,17 @@ body {
   font-style: normal;
   transition: background-color 0.3s;
 }
-.down:hover{
-background-color: #0c959a;
-border-color: #0c959a;
+.down:hover {
+  background-color: #0c959a;
+  border-color: #0c959a;
 }
-.down:hover .fas{
-transform: rotate(90deg);
+.down:hover .fas {
+  transform: rotate(90deg);
 }
 .navbar {
-   position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   background-color: #1b242f;
   border-bottom: 3px solid #04c2c9;
   text-align: left;
@@ -91,8 +92,170 @@ transform: rotate(90deg);
   font-style: normal;
   transition: color 0.3s;
 }
-.navItems:focus,
+.navItems:target,
 .navItems:hover {
   color: red;
-}
+  text-decoration: 1px red underline;
 
+}
+#about{
+height: 100%;
+overflow: hidden;
+}
+#about-flex {
+  display: grid;
+  place-items: center;
+  margin-top: 80px;
+  height: 100%;
+}
+.about-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0 0 0 /70%);
+  width: 90px;
+  height: 70px;
+  border-bottom: 4px solid black;
+}
+.logo-container {
+  margin-top: 30px;
+  width: 100%;
+}
+.logo-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 50px;
+  width: 250px;
+  position: relative;
+  left: 380px;
+}
+.logo_and_name {
+  width: 300px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.hexagon {
+  width: 125px;
+  height: 125px;
+  background-color: #04c2c9;
+  margin: 27.5px 0;
+  clip-path: polygon(25% 6.7%,75% 6.7%,100% 50%,75% 93.3%,25% 93.3%,0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hexagon > i {
+  color: white;
+  font-size: 30px;
+}
+.skill-name {
+  color: rgb(0 0 0 /60%);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+}
+.skill-par {
+  /* position:relative; */
+  /* left: -50px; */
+  width: 250px;
+  text-align: center;
+  color: rgb(0 0 0 /60%);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    position: relative;
+  bottom: 70px;
+}
+#photo_skillbar {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  padding: 0px 500px;
+}
+.my_photo{
+width: 300px;
+text-align: center;
+}
+.me {
+  position: relative;
+bottom:  50px;
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+  margin: 27.5px 0;
+  clip-path: polygon(25% 6.7%,75% 6.7%,100% 50%,75% 93.3%,25% 93.3%,0% 50%);
+}
+.photo_par{
+position: relative;
+bottom: 100px;
+right: 22px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+width: 350px;
+color: rgb(0 0 0 /70%);
+}
+.myself_par{
+position: relative;
+bottom: 10px;
+text-align: center;
+font-size: 17px;
+}
+a{
+text-decoration: none;
+color: rgb(4 192 201/90%);
+}
+.skillbar_container{
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  bottom: 50px;
+}
+.skillName{
+margin-bottom: 20px;
+height: 10px;
+}
+.skill_label{
+  background-color: #04c2c9;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  display: block;
+  padding: 5px 0px;
+  box-sizing: border-box;
+  font-size: 15px;
+  /* margin-bottom: 5px; */
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  top: 30px;
+  color: white;
+}
+.skill_bar{
+  background-color:rgba(0 0 0 / 10%);
+  overflow: hidden;
+  height: 25px;
+  
+}
+.skill_level{
+  height: 25px;
+  background-color: #1b9b9f;
+  transition: width 0.5s ease-in-out;
+}
