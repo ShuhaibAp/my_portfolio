@@ -171,10 +171,23 @@ text-align: center;
   color: #ee1df5;
   text-shadow: 1px 1px 1px #000000;
 }
+@keyframes appear{
+from{
+opacity: 0;
+scale: 0.6;
+}
+to{
+opacity: 1;
+scale: 1;
+}
+}
 #about {
   height: 100%;
   overflow: hidden;
-  background-color: rgba(0 0 0/ 10%)
+  background-color: rgba(0 0 0/ 10%);
+      animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 #about-flex {
   display: grid;
@@ -196,6 +209,7 @@ text-align: center;
   height: 70px;
   border-bottom: 4px solid black;
 }
+
 .logo-container {
   margin-top: 30px;
   width: 100%;
@@ -232,6 +246,7 @@ text-align: center;
   align-items: center;
   justify-content: center;
   position: relative;
+  
 }
 .hexagon > i {
   color: white;
@@ -264,10 +279,12 @@ text-align: center;
   flex-direction: row;
   gap: 150px;
   padding: 0px 500px;
+  
 }
 .my_photo {
   width: 300px;
   text-align: center;
+  
 }
 .me {
   position: relative;
@@ -347,6 +364,9 @@ text-align: center;
   height: 100%;
   overflow: hidden;
   background-color: rgba(0 0 0/ 10%);
+      animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 #port_flex {
   display: grid;
@@ -501,6 +521,9 @@ color: white;
   /* background-color: #252934; */
   /* margin-top: 100px; */
   background-image: url(./images/globe1.jpg);
+      animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .top {
 	width: 0;
